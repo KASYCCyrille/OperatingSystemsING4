@@ -44,10 +44,5 @@ void	myFree(t_mem *mp, t_address p, int sz)
 	else
 		mp->root = new_hole;
 	link->prev = new_hole;
-
-	printf("-------\n");
-	printHole(mp);
 	defragmentHoles(mp);
-	printf("---\n");
-	printHole(mp);
 }

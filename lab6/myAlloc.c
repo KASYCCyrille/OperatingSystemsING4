@@ -1,6 +1,5 @@
 #include "mmu.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 t_hole *bestFit(t_mem *mp, int sz)
 {
@@ -55,7 +54,6 @@ t_address myAlloc(t_mem *mp, int sz)
 	if (!(link = firstFit(mp, sz)))
 		return (-1);
 	ret = link->adr;
-	printf("%d\n", ret);
 	if(link->sz - sz == 0)
 	{
 		if(link->prev)

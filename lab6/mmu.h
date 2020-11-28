@@ -29,7 +29,7 @@ void		myWrite(t_mem *mp, t_address p, t_byte val);
 // read memory from a byte
 t_byte		myRead(t_mem *mp, t_address p);
 
-
+void		printFullMem(t_mem *mp);
 void		printMemory(t_mem *mp);
 void		printHole(t_mem *mp);
 # endif
